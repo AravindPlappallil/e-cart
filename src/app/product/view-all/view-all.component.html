@@ -1,0 +1,70 @@
+
+
+
+<div class="container mt-3">
+        <div class="container d-flex">
+            <div (click)="filterProduct('')" class="">
+                <a>
+                    <img style="height: 175px; width: 200px;" src="https://i.postimg.cc/MGQks3g9/products-icon-25.png" alt="">
+                </a>
+            </div>
+            <div style="height: 175px; width: 200px;"  (click)="filterProduct('1')" class="ms-3">
+                <a >
+                    <img style="height: 50px; width: 200px; margin-top: 70px;" src="https://i.postimg.cc/dQz56tJc/samsung-logo-samsung-icon-transparent-free-png-copy.png" alt="">
+                </a>
+            </div>
+            <div (click)="filterProduct('2')" class="ms-3">
+                <a>
+                    <img style="margin-top: 25px;" src="https://i.postimg.cc/TYSqfTkY/free-sony-226421-copy.png" alt="">
+                </a>
+            </div>
+            <div (click)="filterProduct('3')" class="ms-3 mt-1">
+                <a>
+                    <img  style="margin-top: 60px;" src="https://i.postimg.cc/x8sCnTnf/semp-tcl-logo-5-C9188-EBBD-seeklogo-com.png" alt="">
+                </a>
+            </div>
+            <div (click)="filterProduct('4')" class="mt-1 ms-3">
+                <a>
+                    <img style="margin-top: 60px;" src="https://i.postimg.cc/hjv4MRVN/free-oneplus-2849945-2370670-copy.png" alt="">
+                </a>
+            </div>
+            <div (click)="filterProduct('5')" class="ms-3 mt-5">
+                <a>
+                    <img style="height: 75px;" src="https://i.postimg.cc/Bn2CZdPW/download.png" alt="">
+                </a>
+            </div>
+            <div (click)="filterProduct('6')" class="ms-3 mt-5">
+                <a>
+                    <img style="height: 75px;" src="https://i.postimg.cc/Pxv74SFd/673487.png" alt="">
+                </a>
+            </div>
+        </div>
+    
+</div>
+
+<!-- Section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div *ngFor="let i of filterData | search:searchData:'productName'" class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src={{i.productImage}} alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{i.productName}}</h5>
+                            <!-- Product price-->
+                            <p>{{i.price}}</p>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product/view/{{i.id}}">View</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

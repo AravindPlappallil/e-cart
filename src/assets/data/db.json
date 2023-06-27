@@ -1,0 +1,95 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": " Samsung Smart TV 1m 08cm (43 inch) CUE60 Crystal 4K UHD ",
+      "categoryId": 1,
+      "description": "Featuring up to three suspenders, the BOSCH Series 4 WAJ2006EIN 7 kg Front-loading Fully Automatic Washing Machine offers consistent and reliable performance.",
+      "price": "₹33990.00",
+      "isAvailable": true,
+      "productImage": "https://i.postimg.cc/hvpWqSyK/in-crystal-uhd-cu7000-ua43cu7700klxl-535859766.jpg",
+      "rating": 4.4,
+      "review": 20,
+      "vendorNames": "Samsung TV",
+      "warrenty": "2 Year Manufacturer Warranty"
+    },
+    {
+      "id": 2,
+      "productName": "TCL 32 inches S5400 2K Full HD Metallic Bezel-less Design Google TV",
+      "categoryId": 3,
+      "description": "Enjoy a viewing experience that is 2X the clarity of standard HD TVs with resolution of 1920 x 1080. A+ Grade Full HD Panel provides clear, detailed images that make for an engaging viewing experience.",
+      "price": "₹15,990",
+      "isAvailable": true,
+      "productImage": "https://i.postimg.cc/3xsVDJVR/1.webp",
+      "rating": 4.2,
+      "review": 28,
+      "vendorNames": "TCL TV",
+      "warrenty": "1 Year Manufacturer Warranty"
+    },
+    {
+      "id": 3,
+      "productName": "Mi 5A 80 cm (32 inch) HD Ready LED Smart Android TV with Dolby Audio (2022 Model)",
+      "categoryId": 5,
+      "description": "You can enjoy your favourite movies, catch up on news, and binge-watch TV series on the Xiaomi L32M7-5AIN HD Smart TV. It features an elegant metal frame with a bezel-less design, allowing you to enjoy a widescreen view. In addition, this TV is sure to enhance your aural experience with Dolby Audio, which provides 20 W high-fidelity sound. Furthermore, boasting a HD display and wide colour gamut, this TV provides high-quality visuals.",
+      "price": "₹14,000",
+      "isAvailable": true,
+      "productImage": "https://i.postimg.cc/mkfkVFwQ/l32m7-5ain-mi-original-imagdsdwqf6bkmkz.webp",
+      "rating": 4.4,
+      "review": 42,
+      "vendorNames": "MI TV",
+      "warrenty": "1 Year Manufacturer Warranty"
+    },
+    {
+      "id": 4,
+      "productName": "OnePlus TV 43 inches Y1S Pro",
+      "categoryId": 4,
+      "description": "Seeing is believing with 4K. Witness extraordinary clarity and ultra-realistic detail to transform your viewing experience. With 10-bit color depth, over a billion colors deliver breathtaking color accuracy in every frame.",
+      "price": "₹26,999",
+      "isAvailable": true,
+      "productImage": "https://i.postimg.cc/LsTsy7zz/1.png",
+      "rating": 4.3,
+      "review": 45,
+      "vendorNames": "OnePlus TV",
+      "warrenty": "1 Year Manufacturer Warranty"
+    },
+    {
+      "id": 5,
+      "productName": "LG 80 cm (32 inches) HD Ready Smart LED TV 32LM563BPTC (Dark Iron Gray)",
+      "categoryId": 6,
+      "description": "This LG Smart TV comes equipped with a host of impressive features to delight your senses. While its Dynamic Color Enhancer produces vivid and lifelike colors on the screen, the LG WebOS feature lets you watch shows and movies from your favourite streaming services, such as Netflix and Disney+Hotstar. Also, the DTX Virtual:X technology delivers multi-dimensional sound to ensure an immersive listening experience.",
+      "price": "₹13,999",
+      "isAvailable": true,
+      "productImage": "https://i.postimg.cc/q791vdyM/original-imagc8fnpx39evgc.webp",
+      "rating": 4.3,
+      "review": 34,
+      "vendorNames": "LG Smart TV",
+      "warrenty": "1 Year Manufacturer Warranty"
+    },
+    {
+      "id": 6,
+      "productName": "Samsung 1m 38cm (55 inches) S90C OLED 4K Smart TV",
+      "categoryId": 1,
+      "description": "Samsung innovative OLED offers deep blacks, clean whites and full shades of colors thanks to cutting-edge self-illuminating pixels driven by Quantum Dot.",
+      "price": "₹78,990",
+      "isAvailable": true,
+      "productImage": "https://i.postimg.cc/hGVfxs4d/QN65-S90-CAFXZA-copy.png",
+      "rating": 4.4,
+      "review": 41,
+      "vendorNames": "Samsung TV",
+      "warrenty": "1 Year Manufacturer Warranty"
+    },
+    {
+      "id": "7",
+      "productName": "SONY  43 inch  Full HD LED Smart TV  KDL-43W6600  Black",
+      "categoryId": "2",
+      "description": "Sony's HDR televisions make excellent partners for PlayStation consoles. Immerse yourself in a responsive, fun-filled gaming experience with intensely vibrant colours. See your favourite games come to life with incredible picture quality.",
+      "price": "37,500",
+      "isAvailable": "true",
+      "productImage": "https://i.postimg.cc/rwBZWGdJ/2.jpg",
+      "rating": "3.9",
+      "review": "24",
+      "vendorName": "Sony TV",
+      "warrenty": "1 Year Manufacturer Warranty"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+<div class="m-4">
+    <div class="w-75 container" id="addDiv">
+        <h1 class="text-center mt-2 mb-2">Update the Product</h1>
+        <form (ngSubmit)="updateData()" class="text-center w-75 container">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Product Name</span>
+                <input [(ngModel)]="pdata.productName" type="text" class="form-control" name="prName" id="pName" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Category Id</span>
+                <input [(ngModel)]="pdata.categoryId"  type="text" class="form-control" name="prCategoryId" id="pCategoryId" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Description</span>
+                <input [(ngModel)]="pdata.description" type="text" class="form-control" name="prDescription" id="pDescription" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Price</span>
+                <input [(ngModel)]="pdata.price" type="text" class="form-control" name="prPrice" id="pPrice" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Is Available</span>
+                <input [(ngModel)]="pdata.isAvailable" type="text" class="form-control" name="prAvailable" id="pAvailable" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Product Image</span>
+                <input [(ngModel)]="pdata.productImage" type="text" class="form-control" name="prImage" id="pImage" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Rating</span>
+                <input [(ngModel)]="pdata.rating" type="text" class="form-control" name="prRating" id="pRating" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Review</span>
+                <input [(ngModel)]="pdata.review" type="text" class="form-control" name="prReview" id="pReview" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+           
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Vendor Names</span>
+                <input [(ngModel)]="pdata.vendorNames" type="text" class="form-control" name="prVName" id="pVName" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Warrenty</span>
+                <input [(ngModel)]="pdata.warrenty" type="text" class="form-control" name="prWarrenty" id="pWarrenty" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            
+    
+            <button type="submit" class="btn btn-outline-primary mb-2">Edit</button>
+    
+        </form>
+    </div>
+</div>

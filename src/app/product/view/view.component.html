@@ -1,0 +1,22 @@
+
+<!-- product section -->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="{{pdata.productImage}}"></div>
+            <div class="col-md-6">
+                <h1 class="display-5 fw-bolder">{{pdata.productName}}</h1>
+                <p>Rating: {{pdata.rating}}</p>
+                <div class="fs-5 mb-5">
+                    <h3 class="text-decoration">{{pdata.price}}</h3>
+                </div>
+                <p class="lead">{{pdata.description}}</p>
+                <div class="d-flex">
+                    <a href="product/edit/{{id}}"><button type="button" class="btn btn-outline-success me-2">Edit</button></a>
+                    <a href="product/delete/{{id}}"><button type="button" class="btn btn-outline-secondary">Delete</button></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

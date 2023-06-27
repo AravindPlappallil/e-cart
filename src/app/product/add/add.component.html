@@ -1,0 +1,98 @@
+<div class="m-4">
+    <div class="w-75 container" id="addDiv">
+        <h1 class="text-center mt-2 mb-2">Add New Product</h1>
+        <form [formGroup]="addProduct" (ngSubmit)="addNewProduct()" class="text-center w-75 container">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">ID</span>
+                <input formControlName="pid" type="text" class="form-control" name="prid" id="pid" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div *ngIf="(this.addProduct.get('pid')?.errors)&&(this.addProduct.get('pid')?.touched)">
+                <p class="text-dark">must contain number</p>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Product Name</span>
+                <input formControlName="pName" type="text" class="form-control" name="prName" id="pName" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div *ngIf="(this.addProduct.get('pName')?.errors)&&(this.addProduct.get('pName')?.touched)">
+                <p class="text-dark">must contain a name</p>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Category Id</span>
+                <input formControlName="pCategoryId" type="text" class="form-control" name="prCategoryId" id="pCategoryId" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div *ngIf="(this.addProduct.get('pCategoryId')?.errors)&&(this.addProduct.get('pCategoryId')?.touched)">
+                <p class="text-dark">must contain number</p>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Description</span>
+                <input formControlName="pDescription" type="text" class="form-control" name="prDescription" id="pDescription" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div *ngIf="(this.addProduct.get('pDescription')?.errors)&&(this.addProduct.get('pDescription')?.touched)">
+                <p class="text-dark">must contain charecters in Description</p>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Price</span>
+                <input formControlName="pPrice" type="text" class="form-control" name="prPrice" id="pPrice" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div *ngIf="(this.addProduct.get('pPrice')?.errors)&&(this.addProduct.get('pPrice')?.touched)">
+                <p class="text-dark">must contain number</p>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Is Available</span>
+                <input formControlName="pAvailable" type="text" class="form-control" name="prAvailable" id="pAvailable" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div *ngIf="(this.addProduct.get('pAvailable')?.errors)&&(this.addProduct.get('pAvailable')?.touched)">
+                <p class="text-dark">must contain charecters</p>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Product Image</span>
+                <input formControlName="pImage" type="text" class="form-control" name="prImage" id="pImage" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div *ngIf="(this.addProduct.get('pImage')?.errors)&&(this.addProduct.get('pImage')?.touched)">
+                <p class="text-dark">must contain charecters, numbers & special charecters</p>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Rating</span>
+                <input formControlName="pRating" type="text" class="form-control" name="prRating" id="pRating" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div *ngIf="(this.addProduct.get('pRating')?.errors)&&(this.addProduct.get('pRating')?.touched)">
+                <p class="text-dark">must contain number</p>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Review</span>
+                <input formControlName="pReview" type="text" class="form-control" name="prReview" id="pReview" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div *ngIf="(this.addProduct.get('pReview')?.errors)&&(this.addProduct.get('pReview')?.touched)">
+                <p class="text-dark">must contain number</p>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Vendor Names</span>
+                <input formControlName="pVName" type="text" class="form-control" name="prVName" id="pVName" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div *ngIf="(this.addProduct.get('pVName')?.errors)&&(this.addProduct.get('pVName')?.touched)">
+                <p class="text-dark">must contain charecters</p>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Warrenty</span>
+                <input formControlName="pWarrenty" type="text" class="form-control" name="prWarrenty" id="pWarrenty" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div *ngIf="(this.addProduct.get('pWarrenty')?.errors)&&(this.addProduct.get('pWarrenty')?.touched)">
+                <p class="text-dark">must contain charecters and number</p>
+            </div>
+    
+            <button type="submit" class="btn btn-outline-primary mb-2">Add Product</button>
+    
+        </form>
+    </div>
+</div>
